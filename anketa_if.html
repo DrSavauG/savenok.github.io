@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anketa_if</title>
+</head>
+<body>
+    
+    <script>
+          "use strict";
+    
+          let surname = prompt( "Введите вашу фамилию...", 'Пупкин' );
+          let name = prompt( "Введите вашe имя...", 'Петр' );
+          let secondName = prompt( "Введите ваше отчество...", 'Иванович' );
+          let age = prompt( "Введите ваш возраст ( лет )...", '59' );
+          let sex = confirm( "Ваш пол мужской?" );
+
+          
+
+          let sexLetter, retire, retireAge, p = ' ';
+          let ageDay = +age * 365;
+          let FIO = surname +p+ name +p+ secondName;
+         // пенсионный возраст: мужчины 60, женщины 55 лет
+          if( sex ) {
+              retire = 60;
+              sexLetter = 'мужской';
+            }   else {
+                sexLetter = 'женский';
+                retire = 55;
+                            };
+            if( age >= retire ) {
+                retireAge = 'да';
+            }   else{
+                 retireAge = 'нет';
+                }
+
+        alert ('ФИО: '+FIO+'\nВозраст, лет: '+age+'\nВозраст, дней: '+ageDay+'\nПол: '+sexLetter+'\nПенсионный возраст: '+ retireAge);
+
+          
+
+          
+        
+    </script>
+</body>
+</html>
