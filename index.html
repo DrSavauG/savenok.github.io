@@ -1,52 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE Html PUBLIC "-//W3C//DTD Html 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Words</title>
-    <style type="text/css">
-        .dws {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-   }    
-
-.butt {
- border: 3px solid #0868d6;
- font-size: 30px;
- color: #0868d6;
- text-decoration: none;
- text-transform: uppercase;
- width: 250px;
- height: 60px;
- display: block;
- text-align: center;
- line-height: 60px;
- font-family: Arial, sans-serif;
-}    
-       </style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Test</title>
+<link href="style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-        <div class="dws">
-                <a href="#" id="button" class="butt">кнопка</a>
-             </div>
-    
-             
-    <script>
-          "use strict";
-          
-          button.onclick = () => {
-             let input = prompt ("Введите текст ...", 'абра кадабра та дам паррабам' );
-             let inputArr = input.split(' ');
-             let newArr = inputArr.sort((a, b) => b.length - a.length);
-            
 
-             alert( newArr[0] + '; ' + newArr[1] + '; ' + newArr[2]);
 
-      
-          }
-    </script>
-</body>
+  <body>
+    <div class="header">гайд по командным видам спорта</div>
+    <div class="container">
+      <div class="menu">
+        <div class="menu-label">Виды спорта:</div>
+        <ul>
+          <li><a href="https://ru.wikipedia.org/wiki/Австралийский_футбол">Австралийский футбол</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/Баскетбол">Баскетбол</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/Бейсбол">Бейсбол</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/Водное_поло">Водное поло</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/Волейбол">Волейбол</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/Гандбол">Гандбол</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/Корфбол">Корфбол</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/Крикет">Крикет</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/Лакросс">Лакросс</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/Регби">Регби</a></li>
+        </ul>
+      </div>
+      <div class="main">
+        <h3 class="content-title">Американский футбол</h3>
+        <img class="content-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/2004_Notre_Dame-Navy_Game.jpg/600px-2004_Notre_Dame-Navy_Game.jpg"/>
+        <p>Американский футбол, известный в США как футбол — контактный командный вид спорта. В нём принимают участие две команды, по одиннадцать игроков с каждой стороны, играют овальным мячом на прямоугольном поле, длиной 120 ярдов (109,728 метра), из них 100 ярдов (~91,45 метров) — игровая зона и по 10 крайних ярдов — очковые зоны команд (англ. end zone) и шириной 53,3 ярда (48,738 метра) с воротами в виде рогатки на обоих концах. Команда должна владеть мячом для продвижения его в очковую зону, неся или пасуя мяч. Сначала одной из команд надо продвинуть мяч на 10 ярдов (даётся 4 попытки). Если им это удастся, они получают ещё четыре попытки. В противном случае, мяч достаётся соперникам. Очки можно набрать за счёт продвижения мяча в конец зоны (тачдаун) или забив его в ворота (филдгол), также защита может набрать очки, сделав сейфти. Та команда, у которой по истечении матча больше очков, побеждает. </p>
+<p>
+  Американский футбол развился из ранних форм регби и футбола, который обычно в США называют «соккер». Считается, что первая игра была сыграна 6 ноября 1869 года по одному из вариантов правил игры в соккер. В 1880 году Уолтер Кэмп (англ.)русск. (англ. Walter Camp), известный как «Отец американского футбола» (он был игроком, судьёй и спортивным комментатором) первым изменил неопределённые правила игры на конкретные: ввел снэп, снизил количество игроков до одиннадцати. Новые правила узаконили пас вперед, создание нейтральной зоны, и установили ширину поля.
+        </p>
+      </div>
+    </div>
+    <div class="footer">Citius, Altius, Fortius!</div>
+  </body>
 </html>
