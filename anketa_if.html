@@ -14,7 +14,7 @@
           let surname = prompt( "Введите вашу фамилию...", 'Пупкин' );
           let name = prompt( "Введите вашe имя...", 'Петр' );
           let secondName = prompt( "Введите ваше отчество...", 'Иванович' );
-          let age = prompt( "Введите ваш возраст ( лет )...", '59' );
+          let age = prompt( "Введите ваш возраст ( лет )...", '60' );
           let sex = confirm( "Ваш пол мужской?" );
 
           
@@ -22,13 +22,13 @@
           let sexLetter, retire, retireAge, p = ' ';
           let ageDay = +age * 365;
           let FIO = surname +p+ name +p+ secondName;
-         // пенсионный возраст: мужчины 60, женщины 55 лет
+         // пенсионный возраст: мужчины 65, женщины 60 лет
           if( sex ) {
-              retire = 60;
+              retire = 65;
               sexLetter = 'мужской';
             }   else {
                 sexLetter = 'женский';
-                retire = 55;
+                retire = 60;
                             };
             if( age >= retire ) {
                 retireAge = 'да';
